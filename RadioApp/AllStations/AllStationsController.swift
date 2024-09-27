@@ -80,7 +80,6 @@ extension AllStationsController: UITextFieldDelegate {
 
 	func textFieldDidBeginEditing(_ textField: UITextField) {
 		isActiveSearch = true
-        searchPresenter.activate()
 	}
 }
 
@@ -128,8 +127,8 @@ extension AllStationsController: UICollectionViewDataSource {
 			for: indexPath
 		)
 		guard let cell = cell as? AllStationsCell else { return UICollectionViewCell() }
-        
         let presenter: AllStationsPresenterProtocol = isActiveSearch ? searchPresenter : presenter
+        guard !presenter.getStations.isEmpty else { return cell }
         let station = presenter.getStations[indexPath.row]
 		cell.configure(by: indexPath, with: station, delegate: self)
 		
@@ -166,7 +165,6 @@ private extension AllStationsController {
 			guard let self else { return }
             
             isActiveSearch.toggle()
-            
 			if isActiveSearch {
                 searchPresenter.setPlayerStations()
                 searchTextField.becomeFirstResponder()

@@ -403,8 +403,8 @@ private extension AllStationsController {
 			searchImageView.centerYAnchor.constraint(equalTo: searchTextField.centerYAnchor),
 			searchImageView.leadingAnchor.constraint(equalTo: searchTextField.layoutMarginsGuide.leadingAnchor),
 			
-			activateSearchButton.heightAnchor.constraint(equalToConstant: 32),
-			activateSearchButton.widthAnchor.constraint(equalToConstant: 50),
+            activateSearchButton.heightAnchor.constraint(equalToConstant: 32).withPriority(.defaultLow),
+            activateSearchButton.widthAnchor.constraint(equalToConstant: 50).withPriority(.defaultLow),
 
 			collectionView.widthAnchor.constraint(equalTo: mainStack.widthAnchor),
 			collectionView.bottomAnchor.constraint(equalTo: mainStack.bottomAnchor)

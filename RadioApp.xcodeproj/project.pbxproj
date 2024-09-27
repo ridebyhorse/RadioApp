@@ -74,6 +74,7 @@
 		C62348652C5E8B2D00F536E7 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62348642C5E8B2D00F536E7 /* PopularCollectionViewCell.swift */; };
 		C634B7222C66B83600459D1F /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634B7212C66B83600459D1F /* VolumeSlider.swift */; };
 		C634B7242C66BF4500459D1F /* VerticalVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634B7232C66BF4500459D1F /* VerticalVolumeView.swift */; };
+		C636005B2CA742520077AFB6 /* NSLayoutConstraint + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636005A2CA742520077AFB6 /* NSLayoutConstraint + Extensions.swift */; };
 		C653B3272C6770740049A922 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653B3262C6770740049A922 /* AudioPlayerView.swift */; };
 		C653B32D2C67E30C0049A922 /* HorizontalVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C653B32C2C67E30C0049A922 /* HorizontalVolumeView.swift */; };
 		C66106D72C60224E00E6196C /* AudioPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66106D62C60224E00E6196C /* AudioPlayerController.swift */; };
@@ -210,6 +211,7 @@
 		C62348642C5E8B2D00F536E7 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		C634B7212C66B83600459D1F /* VolumeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
 		C634B7232C66BF4500459D1F /* VerticalVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalVolumeView.swift; sourceTree = "<group>"; };
+		C636005A2CA742520077AFB6 /* NSLayoutConstraint + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint + Extensions.swift"; sourceTree = "<group>"; };
 		C653B3262C6770740049A922 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		C653B32C2C67E30C0049A922 /* HorizontalVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalVolumeView.swift; sourceTree = "<group>"; };
 		C66106D62C60224E00E6196C /* AudioPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerController.swift; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				C6DF00C72C5FAA4B0011EA5D /* UIButton + Extensions.swift */,
 				C667FD722C64147300BB3320 /* Int + Extensions.swift */,
 				C6908FD92C65584700208F0F /* Notification + Extensions.swift */,
+				C636005A2CA742520077AFB6 /* NSLayoutConstraint + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -957,6 +960,7 @@
 				BECF66422C5A1E300068160D /* UDService.swift in Sources */,
 				B6E8FDFB2C670359008FF38C /* AllStationViewModel.swift in Sources */,
 				BECF66482C5A22A70068160D /* EditProfileViewController.swift in Sources */,
+				C636005B2CA742520077AFB6 /* NSLayoutConstraint + Extensions.swift in Sources */,
 				B949AE582C5F805600E2A338 /* FavoritesRouter.swift in Sources */,
 				BECF66252C5A06470068160D /* PrivacyViewController.swift in Sources */,
 				BECF661D2C5A05750068160D /* CustomSettingsView.swift in Sources */,

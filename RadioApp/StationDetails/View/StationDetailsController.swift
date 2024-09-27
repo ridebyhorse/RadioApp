@@ -128,8 +128,8 @@ final class StationDetailsController: ViewController {
         radioFrequencyLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(200)
             make.centerX.equalToSuperview()
-            make.leading.equalToSuperview().inset(60)
-            make.trailing.equalToSuperview().inset(85)
+            make.leading.equalToSuperview().inset(60).priority(.low)
+            make.trailing.equalToSuperview().inset(85).priority(.low)
         }
         
         radioNameLabel.snp.makeConstraints { make in
@@ -146,7 +146,6 @@ final class StationDetailsController: ViewController {
         stationImageView.snp.makeConstraints { make in
             make.top.equalTo(radioFrequencyLabel.snp.top)
             make.leading.equalTo(radioFrequencyLabel.snp.trailing).inset(-5)
-//            make.leading.equalTo(radioNameLabel.snp.trailing).offset(10)
             make.height.width.equalTo(50)
         }
         

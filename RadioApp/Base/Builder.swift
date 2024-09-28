@@ -9,11 +9,13 @@ import UIKit
 
 final class Builder {
     static func createPopular() -> UIViewController {
-        PopularAssembly().build(router: PopularRouter())
+        let controller = PopularAssembly().build(router: PopularRouter())
+        return NavigationController(rootViewController: controller)
     }
 
     static func createFavorite() -> UIViewController {
-        FavoritesAssembly().build(router: FavoritesRouter())
+        let controller = FavoritesAssembly().build(router: FavoritesRouter())
+        return NavigationController(rootViewController: controller)
     }
 
     static func createAllStations() -> UIViewController {

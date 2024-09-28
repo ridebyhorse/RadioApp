@@ -145,7 +145,7 @@ extension AllStationsPresenter: AllStationsPresenterProtocol {
 	/// Метод добавляет радиостанцию в избранное или удаляет от туда. Также голосует за выбранную радиостанцию, но только один раз.
 	func didStationVoted(at indexPath: IndexPath) {
 		Task {
-			var station = stations[indexPath.row]
+			let station = stations[indexPath.row]
             favorite(station: station)
 			let result = await radioBrowser.voteForStation(withId: station.id)
             switch result {

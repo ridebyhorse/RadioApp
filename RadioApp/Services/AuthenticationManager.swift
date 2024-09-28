@@ -24,19 +24,22 @@ struct AuthDataResultModel {
 }
 
 final class AuthenticationManager {
+    static let shared = AuthenticationManager()
     private let auth = Auth.auth()
     private let db = Firestore.firestore()
-    static let shared = AuthenticationManager()
     
     private init() {
         UserDefaults.standard.removeObject(forKey: "credentials")
     }
 
-    func getAuthenticatedUser() async throws -> AuthDataResultModel {
-        guard var user = auth.currentUser else {
-            throw URLError(.badServerResponse)
+    func getAuthenticatedUser(completion: @escaping (User?) -> Void) {
+        let _ = auth.addStateDidChangeListener { auth, user in
+            completion(user)
         }
-        return AuthDataResultModel(user: user)
+    }
+    
+    func getCurrentUser() -> User? {
+        auth.currentUser
     }
 
     func createUser(name: String, email: String, password: String) async throws -> AuthDataResultModel {

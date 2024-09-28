@@ -102,6 +102,10 @@
 		CB2C8CBA2C57AB5800D280FE /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C8CB92C57AB5800D280FE /* Configurable.swift */; };
 		CB2C8CC02C57B1A000D280FE /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2C8CBF2C57B1A000D280FE /* HomeController.swift */; };
 		CB2C8CC82C57C8AB00D280FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2C8CC72C57C8AB00D280FE /* Assets.xcassets */; };
+		CB6F3E412CA87A2B005C2ED9 /* ViewController+LoadingPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F3E402CA87A2B005C2ED9 /* ViewController+LoadingPresenting.swift */; };
+		CB6F3E432CA87BF1005C2ED9 /* ViewController+ErrorPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F3E422CA87BF1005C2ED9 /* ViewController+ErrorPresenting.swift */; };
+		CB6F3E452CA87F2B005C2ED9 /* UIImage+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F3E442CA87F2B005C2ED9 /* UIImage+Mask.swift */; };
+		CB6F3E472CA88044005C2ED9 /* MainBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F3E462CA88044005C2ED9 /* MainBarItem.swift */; };
 		CBB20CBA2C61501300B35416 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBB20CB92C61501300B35416 /* GoogleService-Info.plist */; };
 		CBB20CBF2C61540E00B35416 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CBB20CBE2C61540E00B35416 /* FirebaseAuth */; };
 		CBB20CC12C61540E00B35416 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CBB20CC02C61540E00B35416 /* FirebaseFirestore */; };
@@ -240,6 +244,10 @@
 		CB2C8CB92C57AB5800D280FE /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		CB2C8CBF2C57B1A000D280FE /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CB2C8CC72C57C8AB00D280FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB6F3E402CA87A2B005C2ED9 /* ViewController+LoadingPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+LoadingPresenting.swift"; sourceTree = "<group>"; };
+		CB6F3E422CA87BF1005C2ED9 /* ViewController+ErrorPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ErrorPresenting.swift"; sourceTree = "<group>"; };
+		CB6F3E442CA87F2B005C2ED9 /* UIImage+Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Mask.swift"; sourceTree = "<group>"; };
+		CB6F3E462CA88044005C2ED9 /* MainBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBarItem.swift; sourceTree = "<group>"; };
 		CBB20CB92C61501300B35416 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CBB20CCC2C62139400B35416 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		CBB20CCE2C6213A000B35416 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
@@ -495,6 +503,9 @@
 				C6DF00C72C5FAA4B0011EA5D /* UIButton + Extensions.swift */,
 				C667FD722C64147300BB3320 /* Int + Extensions.swift */,
 				C6908FD92C65584700208F0F /* Notification + Extensions.swift */,
+				CB6F3E402CA87A2B005C2ED9 /* ViewController+LoadingPresenting.swift */,
+				CB6F3E422CA87BF1005C2ED9 /* ViewController+ErrorPresenting.swift */,
+				CB6F3E442CA87F2B005C2ED9 /* UIImage+Mask.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -830,6 +841,7 @@
 				CBF57B582C5835AC006237E8 /* CollectionCell.swift */,
 				CBB20CD22C62141900B35416 /* LoadingView.swift */,
 				CB28CF612C63CD9C00E55A95 /* ErrorView.swift */,
+				CB6F3E462CA88044005C2ED9 /* MainBarItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -994,6 +1006,7 @@
 				CBB20CEE2C627E0B00B35416 /* ProfileAssembly.swift in Sources */,
 				BECF66172C58D7410068160D /* ProfileViewController.swift in Sources */,
 				CBF57B562C58319D006237E8 /* Builder.swift in Sources */,
+				CB6F3E472CA88044005C2ED9 /* MainBarItem.swift in Sources */,
 				113FE50F2C61396B00B2AC8B /* StationDetailsAssembly .swift in Sources */,
 				C68453E42C62BBE000C457EA /* AudioPlayerPresenter.swift in Sources */,
 				B6E8FE012C670359008FF38C /* AllStationsProtocols.swift in Sources */,
@@ -1012,6 +1025,7 @@
 				BECF66272C5A06670068160D /* PrivacyInfo.swift in Sources */,
 				C623484E2C5E899800F536E7 /* UIImageView + Extensions.swift in Sources */,
 				BECF662C2C5A0D570068160D /* AboutUsViewController.swift in Sources */,
+				CB6F3E432CA87BF1005C2ED9 /* ViewController+ErrorPresenting.swift in Sources */,
 				B6E8FDFF2C670359008FF38C /* AllStationsController.swift in Sources */,
 				CBCA8D9C2C5D3965003B01B9 /* UpdatePasswordController.swift in Sources */,
 				BECF66192C5A05360068160D /* UserView.swift in Sources */,
@@ -1028,9 +1042,11 @@
 				C68453E02C62BA4D00C457EA /* AudioPlayerViewController.swift in Sources */,
 				CBCA8D9D2C5D3965003B01B9 /* UpdatePasswordPresenter.swift in Sources */,
 				CB28CF5E2C63CCED00E55A95 /* LoadingPresenting.swift in Sources */,
+				CB6F3E452CA87F2B005C2ED9 /* UIImage+Mask.swift in Sources */,
 				CBCA8D9A2C5D3965003B01B9 /* AuthorizationController.swift in Sources */,
 				C667FD6F2C63FC1100BB3320 /* PlayerStation.swift in Sources */,
 				CBB20CEC2C627AA200B35416 /* HomePresenter.swift in Sources */,
+				CB6F3E412CA87A2B005C2ED9 /* ViewController+LoadingPresenting.swift in Sources */,
 				B949AE512C5F805600E2A338 /* FavStationModel.swift in Sources */,
 				113FE50E2C61396B00B2AC8B /* StationDetailsController.swift in Sources */,
 				CBCA8D9E2C5D3965003B01B9 /* ForgotPasswordController.swift in Sources */,

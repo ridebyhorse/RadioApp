@@ -91,7 +91,7 @@ final class ImageSelectionViewController: UIViewController {
     
     @objc func imageOtherTapped(_ sender: UITapGestureRecognizer) {
         guard let tappedImageView = sender.view as? UIImageView,
-              let tappedIndex = scrollView.subviews.firstIndex(of: tappedImageView) else {
+              let _ = scrollView.subviews.firstIndex(of: tappedImageView) else {
             return
         }
         if let tappedImage = tappedImageView.image {

@@ -8,7 +8,6 @@
 import UIKit
 
 final class RootBuilder {
-    
     static func makeRootRouter(_ scene: UIWindowScene) -> RootRouter {
         RootRouter(UIWindow(windowScene: scene), builder: RootBuilder())
     }

@@ -47,18 +47,19 @@ final class AuthorizationPresenter: AuthorizationPresenterProtocol {
         Task {
             do {
                 let data = try await AuthenticationManager.shared.signInUser(email: email, password: password)
-                guard let userEmail = data.email else { return }
-                print("successfuly signed in")
-                DispatchQueue.main.async { [weak self] in
-                    switch self?.mode {
-                    case .signIn:
-                        self?.router.goHome()
-                    case .reauthenticatePassword:
-                        self?.router.showUpdatePasswordVC()
-                    case .reauthenticateEmail:
-                        self?.router.showUpdateEmailVC()
-                    default:
-                        break
+                if data.email != nil {
+                    print("successfuly signed in")
+                    DispatchQueue.main.async { [weak self] in
+                        switch self?.mode {
+                        case .signIn:
+                            self?.router.goHome()
+                        case .reauthenticatePassword:
+                            self?.router.showUpdatePasswordVC()
+                        case .reauthenticateEmail:
+                            self?.router.showUpdateEmailVC()
+                        default:
+                            break
+                        }
                     }
                 }
             } catch {
@@ -84,11 +85,12 @@ final class AuthorizationPresenter: AuthorizationPresenterProtocol {
         Task {
             do {
                 let data = try await AuthenticationManager.shared.createUser(name: name, email: email, password: password)
-                guard let userEmail = data.email else { return }
-                print("successfuly signed up")
-                AuthenticationManager.shared.updateUsername(name: name)
-                DispatchQueue.main.async { [weak self] in
-                    self?.router.goHome()
+                if data.email != nil {
+                    print("successfuly signed up")
+                    AuthenticationManager.shared.updateUsername(name: name)
+                    DispatchQueue.main.async { [weak self] in
+                        self?.router.goHome()
+                    }
                 }
             } catch {
                 print("Error: \(error.localizedDescription)")

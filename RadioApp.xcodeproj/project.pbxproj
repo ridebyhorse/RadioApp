@@ -61,6 +61,7 @@
 		BECF66582C5A36340068160D /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF66572C5A36340068160D /* LanguageCell.swift */; };
 		BECF66652C5D22240068160D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BECF66672C5D22240068160D /* Localizable.strings */; };
 		BECF666D2C60D1FE0068160D /* CustomSwitchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF666C2C60D1FE0068160D /* CustomSwitchSettingsView.swift */; };
+		C6163E8C2CA84A1B0046702E /* Array + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6163E8B2CA84A1B0046702E /* Array + Extensions.swift */; };
 		C62348482C5E88BD00F536E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62348472C5E88BD00F536E7 /* Constants.swift */; };
 		C623484A2C5E88D100F536E7 /* ColorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62348492C5E88D100F536E7 /* ColorFactory.swift */; };
 		C623484C2C5E88E700F536E7 /* UIStackView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623484B2C5E88E700F536E7 /* UIStackView + Extensions.swift */; };
@@ -198,6 +199,7 @@
 		BECF666A2C5D22DC0068160D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BECF666B2C5D22F20068160D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BECF666C2C60D1FE0068160D /* CustomSwitchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitchSettingsView.swift; sourceTree = "<group>"; };
+		C6163E8B2CA84A1B0046702E /* Array + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + Extensions.swift"; sourceTree = "<group>"; };
 		C62348472C5E88BD00F536E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C62348492C5E88D100F536E7 /* ColorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFactory.swift; sourceTree = "<group>"; };
 		C623484B2C5E88E700F536E7 /* UIStackView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extensions.swift"; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 				C667FD722C64147300BB3320 /* Int + Extensions.swift */,
 				C6908FD92C65584700208F0F /* Notification + Extensions.swift */,
 				C636005A2CA742520077AFB6 /* NSLayoutConstraint + Extensions.swift */,
+				C6163E8B2CA84A1B0046702E /* Array + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -935,6 +938,7 @@
 				C623485A2C5E8AD300F536E7 /* PopularViewModel.swift in Sources */,
 				C623484A2C5E88D100F536E7 /* ColorFactory.swift in Sources */,
 				B6E8FE032C670359008FF38C /* SearchPresenter.swift in Sources */,
+				C6163E8C2CA84A1B0046702E /* Array + Extensions.swift in Sources */,
 				C6908FDA2C65584700208F0F /* Notification + Extensions.swift in Sources */,
 				C66106D72C60224E00E6196C /* AudioPlayerController.swift in Sources */,
 				CBCA8D992C5D3965003B01B9 /* AuthorizationBuilder.swift in Sources */,

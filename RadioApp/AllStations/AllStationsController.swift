@@ -126,10 +126,13 @@ extension AllStationsController: UICollectionViewDataSource {
 			withReuseIdentifier: AllStationsCell.reusableIdentifier,
 			for: indexPath
 		)
-		guard let cell = cell as? AllStationsCell else { return UICollectionViewCell() }
+		guard let cell = cell as? AllStationsCell,
+              let station = presenter.getStations[safe: indexPath.row] else {
+            return UICollectionViewCell()
+        }
+        
         let presenter: AllStationsPresenterProtocol = isActiveSearch ? searchPresenter : presenter
         guard !presenter.getStations.isEmpty else { return cell }
-        let station = presenter.getStations[indexPath.row]
 		cell.configure(by: indexPath, with: station, delegate: self)
 		
 		return cell
